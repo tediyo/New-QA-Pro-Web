@@ -15,7 +15,7 @@ export default function Home() {
             className="dark:invert"
             src="/next.svg"
             alt="Next.js logo"
-            width={180}
+            width={1800}
             height={38}
             priority
           />
@@ -100,7 +100,7 @@ export default function Home() {
               width={16}
               height={16}
             />
-            Go to nextjs.org →
+            Go to nextjs.org → Official website
           </a>
         </footer>
       </div>
