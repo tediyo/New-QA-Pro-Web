@@ -60,7 +60,7 @@ const ParticlesBackground: React.FC = () => {
               type: "circle",
             },
             opacity: {
-              value: 0.5,
+              value: 10.5,
             },
             size: {
               value: 5,
