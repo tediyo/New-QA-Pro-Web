@@ -1,9 +1,30 @@
 // src/app/page.tsx
 
+"use client"; // Add this at the very top
+
 import Image from "next/image";
 import ParticlesBackground from "@/components/ParticlesBackground";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  const [dateTime, setDateTime] = useState<string>("");
+
+  useEffect(() => {
+    const updateDateTime = () => {
+      const now = new Date();
+      const formatted = now.toLocaleString("en-US", {
+        dateStyle: "full",
+        timeStyle: "medium",
+      });
+      setDateTime(formatted);
+    };
+
+    updateDateTime();
+    const interval = setInterval(updateDateTime, 20000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="relative min-h-screen overflow-hidden bg-black text-white">
       {/* Particle Background */}
@@ -19,6 +40,12 @@ export default function Home() {
             height={38}
             priority
           />
+
+          {/* Date and Time in Yellow */}
+          <div className="text-yellow-500 text-lg font-semibold">
+            {dateTime}
+          </div>
+
           <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
             <li className="mb-2">
               Get started by editing{" "}
