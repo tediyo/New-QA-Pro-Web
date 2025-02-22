@@ -47,14 +47,14 @@ const ParticlesBackground: React.FC = () => {
           },
           particles: {
             number: {
-              value: 100,
+              value: 300,
               density: {
                 enable: true,
                 area: 800,
               },
             },
             color: {
-              value: "#ffffff",
+              value: "#FFFF00",
             },
             shape: {
               type: "circle",
@@ -63,13 +63,13 @@ const ParticlesBackground: React.FC = () => {
               value: 0.5,
             },
             size: {
-              value: 3,
+              value: 5,
               random: true,
             },
             links: {
               enable: true,
               distance: 150,
-              color: "#ffffff",
+              color: "#FFFF00",
               opacity: 0.4,
               width: 1,
             },
