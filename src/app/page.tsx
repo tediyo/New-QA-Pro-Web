@@ -5,7 +5,8 @@
 import Image from "next/image";
 import ParticlesBackground from "@/components/ParticlesBackground";
 import DateTime from "@/components/DateTime";
-import HomeSection from "@/components/HomeSection"; // Import the HomeSection component
+import HomeSection from "@/components/HomeSection"; 
+
 
 export default function Home() {
   return (
