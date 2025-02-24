@@ -4,7 +4,8 @@
 
 import Image from "next/image";
 import ParticlesBackground from "@/components/ParticlesBackground";
-import DateTime from "@/components/DateTime"; // Import the new component
+import DateTime from "@/components/DateTime";
+import HomeSection from "@/components/HomeSection"; // Import the HomeSection component
 
 export default function Home() {
   return (
@@ -24,7 +25,10 @@ export default function Home() {
           />
 
           {/* Date and Time in Yellow */}
-          <DateTime /> {/* Use the new DateTime component here */}
+          <DateTime /> 
+
+          {/* Home Section */}
+          <HomeSection /> 
 
           <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
             <li className="mb-2">
