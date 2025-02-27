@@ -13,7 +13,7 @@ const QAPage: FC = () => {
      
         As a QA engineer, I focus on ensuring the quality of software products through manual and automated testing. I have experience working with testing frameworks like Jest, Mocha, and Cypress.
       </p>
-      {/* Add more content here like your QA tools, processes, and projects. */}
+            {/* Add more content here like your QA tools, processes, and projects. */}
     </div>
     </div>
   );
