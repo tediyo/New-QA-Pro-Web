@@ -2,21 +2,23 @@ import type { Config } from "tailwindcss";
 const plugin = require('tailwindcss/plugin');
 const tailwindcssAnimate = require('tailwindcss-animate');
 
-export default {
+const config: Config = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}", // Pages
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}", // Components
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}", // App
   ],
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        background: "var(--background)",  // Custom background color
+        foreground: "var(--foreground)",  // Custom foreground color
       },
     },
   },
   plugins: [
-    tailwindcssAnimate(),
+    tailwindcssAnimate(), // Tailwind CSS Animate plugin
   ],
-} satisfies Config;
+};
+
+export default config;
