@@ -15,34 +15,34 @@ const QAPage: FC = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mt-8">
           {/* Card 1 - Skills */}
-          <div className="bg-white shadow-md rounded-2xl p-6">
+          <div className="bg-white shadow-md rounded-2xl p-6 w-full h-64 flex flex-col justify-center items-center">
             <h2 className="text-2xl font-semibold text-gray-800">Skills</h2>
-            <p className="mt-2 text-gray-600">
-              Manual Testing, Automation Testing, Test Planning, Bug Tracking
+            <p className="mt-2 text-gray-600 text-center">
+              Manual Testing, Automation, Test Planning, Bug Tracking
             </p>
           </div>
 
           {/* Card 2 - Tools */}
-          <div className="bg-white shadow-md rounded-2xl p-6">
+          <div className="bg-white shadow-md rounded-2xl p-6 w-full h-64 flex flex-col justify-center items-center">
             <h2 className="text-2xl font-semibold text-gray-800">Tools</h2>
-            <p className="mt-2 text-gray-600">
+            <p className="mt-2 text-gray-600 text-center">
               Jest, Mocha, Cypress, Selenium, JIRA, Postman
             </p>
           </div>
 
           {/* Card 3 - Experience */}
-          <div className="bg-white shadow-md rounded-2xl p-6">
+          <div className="bg-white shadow-md rounded-2xl p-6 w-full h-64 flex flex-col justify-center items-center">
             <h2 className="text-2xl font-semibold text-gray-800">Experience</h2>
-            <p className="mt-2 text-gray-600">
-              3+ years of experience in software testing across web and mobile applications.
+            <p className="mt-2 text-gray-600 text-center">
+              3+ years in web and mobile testing
             </p>
           </div>
 
           {/* Card 4 - Certifications */}
-          <div className="bg-white shadow-md rounded-2xl p-6">
+          <div className="bg-white shadow-md rounded-2xl p-6 w-full h-64 flex flex-col justify-center items-center">
             <h2 className="text-2xl font-semibold text-gray-800">Certifications</h2>
-            <p className="mt-2 text-gray-600">
-              ISTQB Certified, Google Project Management Certification
+            <p className="mt-2 text-gray-600 text-center">
+              ISTQB Certified, Google Project Management
             </p>
           </div>
         </div>
