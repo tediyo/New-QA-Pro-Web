@@ -37,7 +37,7 @@ const QAPage: FC = () => {
 
             {/* Card 2 - Tools */}
             <div className="bg-white shadow-md rounded-2xl w-64 h-64 flex flex-col justify-center items-center border-2 border-green-500">
-              <h2 className="text-2xl font-semibold text-gray-800">Tools</h2>
+              <h1 className="text-2xl font-semibold text-gray-800">Tools</h1>
               <p className="mt-2 text-center text-gray-600">
                 Jest, Mocha, Cypress, Selenium, JIRA, Postman
               </p>
