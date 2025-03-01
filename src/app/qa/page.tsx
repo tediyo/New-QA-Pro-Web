@@ -29,7 +29,7 @@ const QAPage: FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mt-8 justify-items-center">
             {/* Card 1 - Skills */}
             <div className="bg-white shadow-md rounded-2xl w-64 h-64 flex flex-col justify-center items-center border-2 border-green-500">
-              <h2 className="text-2xl font-semibold text-gray-800">Skills</h2>
+              <h6 className="text-2xl font-semibold text-gray-800">Skills</h6>
               <p className="mt-2 text-center text-gray-600">
                 Manual Testing, Automation, Test Planning, Bug Tracking
               </p>
