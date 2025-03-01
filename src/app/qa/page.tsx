@@ -16,9 +16,9 @@ const QAPage: FC = () => {
     <div className="min-h-screen w-full flex justify-center items-center bg-gray-50">
       <ParticlesBackground />
       <div className="p-8 w-full max-w-4xl">
-        <h1 className="text-4xl font-bold text-gray-900 text-center">
+        <h2 className="text-4xl font-bold text-gray-900 text-center">
           QA - John Doeeeeeeeeeee ( In Development )
-        </h1>
+        </h2>
         
         <p className="mt-4 text-lg text-gray-700 text-center">
           As a QA engineer, I focus on ensuring the quality of software products through manual and automated testing. I have experience working with testing frameworks like Jest, Mocha, and Cypress.
