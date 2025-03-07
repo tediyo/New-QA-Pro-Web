@@ -13,16 +13,16 @@ export default function Home() {
       <ParticlesBackground />
 
       {/* Top Bar */}
-      <header className="absolute top-0 left-0 w-full bg-blue-800 text-white py-4 shadow-md z-20">
+      <header className="absolute top-0 left-0 w-full bg-yellow-500 text-black py-4 shadow-md z-20">
         <div className="flex justify-between items-center max-w-7xl mx-auto px-6">
           <div className="text-xl font-bold">
-            <a href="/" className="text-white hover:text-gray-200">My App</a>
+            <a href="/" className="text-black hover:text-gray-700">My App</a>
           </div>
           <nav className="space-x-6 text-lg">
-            <a href="#home" className="hover:text-gray-200">Home</a>
-            <a href="#about" className="hover:text-gray-200">About</a>
-            <a href="#services" className="hover:text-gray-200">Services</a>
-            <a href="#contact" className="hover:text-gray-200">Contact</a>
+            <a href="#home" className="hover:text-gray-700">Home</a>
+            <a href="#about" className="hover:text-gray-700">About</a>
+            <a href="#services" className="hover:text-gray-700">Services</a>
+            <a href="#contact" className="hover:text-gray-700">Contact</a>
           </nav>
         </div>
       </header>
