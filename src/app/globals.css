@@ -1,18 +1,15 @@
-/* 
-
-/////////////////////////////////////////////////////////////////////////////////////
-*/
-
-
+/* Tailwind base styles */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Root variables for light and dark themes */
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
+/* Dark mode settings */
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -20,8 +17,28 @@
   }
 }
 
+/* Global styles for the body */
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Top bar (header) styles */
+header {
+  background-color: #f59e0b; /* Yellow background (Tailwind's bg-yellow-500) */
+  color: black; /* Black text color */
+  padding: 16px 24px; /* Add padding for top and bottom */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+header a {
+  color: black; /* Black text color for links */
+  transition: color 0.3s ease;
+}
+
+header a:hover {
+  color: #4b5563; /* Tailwind's gray-700 for hover effect */
+}
+
+/* Optional: You can customize other elements as needed */
