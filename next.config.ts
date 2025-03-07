@@ -1,19 +1,8 @@
-// import type { NextConfig } from "next";
+// next.config.js
 
-// const nextConfig: NextConfig = {
-//   images: {
-//     domains: ['randomuser.me'],
-//   },
-//   /* config options here */
-// };
-
-// export default nextConfig;
-
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  images: {
-    domains: ['randomuser.me'],
+module.exports = {
+  reactStrictMode: true,
+  typescript: {
+    ignoreBuildErrors: false, // Optional, if you need to ignore errors temporarily
   },
 };
-
-module.exports = nextConfig;
