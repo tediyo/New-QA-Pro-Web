@@ -9,22 +9,21 @@ import './globals.css';
 export default function Home() {
   return (
     <div className="relative min-h-screen overflow-hidden bg-gradient-to-r from-purple-500 to-indigo-600 text-white">
-      {/* Particle Background from code pen*/}
+      {/* Particle Background */}
       <ParticlesBackground />
 
       {/* Top Bar */}
-      <header className="absolute top-0 left-0 w-full bg-blue-500 text-black py-4 shadow-md z-20">
+      <header className="absolute top-0 left-0 w-full bg-blue-600 text-white py-5 shadow-md z-20">
         <div className="flex justify-between items-center max-w-7xl mx-auto px-6">
-          <div className="text-xl font-bold">
-            <a href="/" className="text-black hover:text-gray-700">My App</a>
+          <div className="text-2xl font-extrabold">
+            <a href="/" className="text-white hover:text-gray-300 transition-colors duration-300">My App</a>
           </div>
-          <nav className="space-x-12 text-lg">  {/* Increased the space-x to 8 */}
-  <a href="#home" className="hover:text-gray-700">Home</a>
-  <a href="#about" className="hover:text-gray-700">About</a>
-  <a href="#services" className="hover:text-gray-700">Services</a>
-  <a href="#contact" className="hover:text-gray-700">Contact</a>
-</nav>
-
+          <nav className="space-x-10 text-lg">
+            <a href="#home" className="hover:text-gray-300 transition-colors duration-300">Home</a>
+            <a href="#about" className="hover:text-gray-300 transition-colors duration-300">About</a>
+            <a href="#services" className="hover:text-gray-300 transition-colors duration-300">Services</a>
+            <a href="#contact" className="hover:text-gray-300 transition-colors duration-300">Contact</a>
+          </nav>
         </div>
       </header>
 
@@ -40,7 +39,7 @@ export default function Home() {
           />
 
           {/* Date and Time in Yellow */}
-          <DateTime className="text-yellow-300 font-semibold text-lg" /> 
+          <DateTime className="text-yellow-300 font-semibold text-lg" />
 
           {/* Home Section */}
           <HomeSection className="bg-white p-8 rounded-lg shadow-lg text-black" />
