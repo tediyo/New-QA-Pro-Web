@@ -18,7 +18,7 @@ export default function Home() {
           <div className="text-2xl font-extrabold">
             <a href="/" className="text-white hover:text-gray-300 transition-colors duration-300">My App</a>
           </div>
-          <nav className="space-x-10 text-lg">
+          <nav className="flex space-x-6 text-lg"> {/* Added space-x-6 for spacing between items */}
             <a href="#home" className="hover:text-gray-300 transition-colors duration-300">Home</a>
             <a href="#about" className="hover:text-gray-300 transition-colors duration-300">About</a>
             <a href="#services" className="hover:text-gray-300 transition-colors duration-300">Services</a>
@@ -39,10 +39,10 @@ export default function Home() {
           />
 
           {/* Date and Time in Yellow */}
-          <DateTime className="text-yellow-300 font-semibold text-lg" />
+          <DateTime  />
 
           {/* Home Section */}
-          <HomeSection className="bg-white p-8 rounded-lg shadow-lg text-black" />
+          <HomeSection  />
 
           <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
             <li className="mb-3">
