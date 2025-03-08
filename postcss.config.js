@@ -1,6 +1,7 @@
+// postcss.config.js
 module.exports = {
   plugins: {
-    '@tailwindcss/postcss': {}, // Change this line
-    autoprefixer: {},
+    tailwindcss: {}, // Tailwind CSS plugin
+    autoprefixer: {}, // Autoprefixer plugin for browser compatibility
   },
 };
