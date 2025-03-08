@@ -3,20 +3,29 @@
 import Image from "next/image";
 import ParticlesBackground from "@/components/ParticlesBackground";
 import DateTime from "@/components/DateTime";
-import HomeSection from "@/components/HomeSection";
+import HomeSection from "@/components/HomeSection"; 
+import { useEffect, useState } from 'react';
 import './globals.css';
 
 export default function Home() {
+  // State to handle client-side only rendering
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    // Set isClient to true after the component is mounted on the client
+    setIsClient(true);
+  }, []);
+
   return (
-    <div className="relative min-h-screen overflow-hidden bg-gradient-to-r from-purple-500 to-indigo-600 text-red-500">
-      {/* Particle Background */}
-      <ParticlesBackground />
+    <div className="relative min-h-screen overflow-hidden bg-gradient-to-r from-purple-500 to-indigo-600 text-white">
+      {/* Particle Background only on the client side */}
+      {isClient && <ParticlesBackground />}
 
       {/* Top Bar */}
-      <header className="absolute top-0 left-0 w-full bg-blue-600 text-red-500 py-5 shadow-md z-20">
+      <header className="absolute top-0 left-0 w-full bg-blue-600 text-white py-5 shadow-md z-20">
         <div className="flex justify-between items-center max-w-7xl mx-auto px-6">
           <div className="text-2xl font-extrabold">
-            <a href="/" className="text-red-500 hover:text-gray-300 transition-colors duration-300">My App</a>
+            <a href="/" className="text-white hover:text-gray-300 transition-colors duration-300">My App</a>
           </div>
           <nav className="flex space-x-6 text-lg">
             <a href="#home" className="hover:text-gray-300 transition-colors duration-300">Home</a>
@@ -38,23 +47,28 @@ export default function Home() {
             priority
           />
 
-          {/* Date and Time in Red */}
-          <DateTime />
+          {/* Date and Time only on client side */}
+          {isClient && <DateTime />}
 
           {/* Home Section */}
           <HomeSection />
 
-          <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)] text-red-500">
+          <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
             <li className="mb-3">
               Get started by editing{" "}
-              <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold text-red-500">
+              <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
                 src/app/page.tsx
               </code>
               .
             </li>
-            <li className="mb-3">Save and see your changes instantly. Next.js!!!</li>
+            <li className="mb-3">Save and see your changes instantly. Nextjs!!!</li>
           </ol>
         </main>
+
+        {/* Green Card */}
+        <div className="relative w-64 h-64 bg-green-500 p-8 flex justify-center items-center shadow-lg rounded-md z-30">
+          <span className="text-white font-bold">Green Card</span>
+        </div>
       </div>
     </div>
   );
