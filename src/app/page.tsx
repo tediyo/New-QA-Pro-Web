@@ -16,6 +16,10 @@ export default function Home() {
   }, []);
 
   return (
+
+    <div className="bg-red-500 text-white p-10">
+      Tailwind is working!
+    
     <div className="relative min-h-screen overflow-hidden bg-gradient-to-r from-purple-500 to-indigo-600 text-white">
       {isClient && <ParticlesBackground />}
 
@@ -68,6 +72,12 @@ export default function Home() {
 
         </div>
       </div>
+      </div>
     </div>
   );
 }
+
+// export default function Page() {
+//   return <h1 className="text-3xl font-bold text-blue-500">Hello, Tailwind!</h1>;
+// }
+
