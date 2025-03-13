@@ -8,7 +8,7 @@ const HomeSection: FC = () => {
       <nav className="fixed top-0 left-0 w-full bg-gray-800 bg-opacity-75 p-4 shadow-md z-10">
         <ul className="flex justify-center space-x-8 text-lg">
           <li>
-            <a href="#home" className="hover:text-yellow-400 cursor-pointer">HOME</a>
+            <a href="#home" className="hover:text-blue-400 cursor-pointer">HOME</a>
           </li>
           <li>
             <a href="#about" className="hover:text-yellow-400 cursor-pointer">ABOUT</a>
