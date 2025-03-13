@@ -64,6 +64,8 @@ export default function Home() {
 
         <div className="relative w-64 h-64 bg-green-500 p-8 flex justify-center items-center shadow-lg rounded-md z-30">
           <span className="text-white font-bold">Green Card</span>
+          <h1 className="text-3xl font-bold text-blue-500">Hello, Tailwind!</h1>
+
         </div>
       </div>
     </div>
