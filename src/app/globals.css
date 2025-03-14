@@ -2,21 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom Styles */
-:root {
-  --background: #baf607;
-  --foreground: #f30f0f;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #3203ef;
-  }
-}
-
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-gray-900 text-white;
 }
