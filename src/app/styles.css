@@ -23,6 +23,7 @@
     padding: 10px 0;
     border-width:20;
     border-radius: 238;
+    border-color: #8807f8;
     box-shadow: 0 40px 60px rgba(253, 3, 3, 0.1);
     
     z-index: 20;
@@ -57,13 +58,13 @@
   
   .nav-links a {
     color: white;
-    font-size: 18px;
+    font-size: 28px;
     text-decoration: none;
     transition: 0.3s;
   }
   
   .nav-links a:hover {
-    color: #d1d5db;
+    color: #fa6101;
   }
   
   /* Main Content */

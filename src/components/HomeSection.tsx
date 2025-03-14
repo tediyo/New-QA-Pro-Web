@@ -24,7 +24,7 @@ const HomeSection: FC = () => {
             <a href="/developer" className="hover:text-yellow-400 cursor-pointer">Developer</a>
           </li>
           <li>
-            <a href="/qa" className="hover:text-yellow-400 cursor-pointer">QA</a>
+            <a href="/qa" className="hover:text-yellow-400 cursor-pointer">QQA</a>
           </li>
         </ul>
       </nav>
