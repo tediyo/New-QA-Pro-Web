@@ -58,13 +58,13 @@
   
   .nav-links a {
     color: white;
-    font-size: 18px;
+    font-size: 28px;
     text-decoration: none;
     transition: 0.3s;
   }
   
   .nav-links a:hover {
-    color: #d1d5db;
+    color: #fa6101;
   }
   
   /* Main Content */
