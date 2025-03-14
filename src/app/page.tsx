@@ -73,3 +73,23 @@ export default function Home() {
     </div>
   );
 }
+
+// export default function Page() {
+//   return (
+//     <div className="flex flex-col items-center justify-center min-h-screen bg-blue-500 text-white p-10">
+//       <h1 className="text-4xl font-bold">Tailwind is Working! 🎉</h1>
+//       <p className="text-lg mt-4">If you see a blue background and white text, Tailwind is working!</p>
+//       <button className="mt-6 px-6 py-3 bg-green-500 text-black font-semibold rounded-lg hover:bg-green-700 transition">
+//         Test Button
+//       </button>
+//     </div>
+//   );
+// }
+
+// export default function Page() {
+//   return (
+//     <div className="flex min-h-screen items-center justify-center bg-blue-500 text-white text-3xl font-bold">
+//       Tailwind is Working! 🎉
+//     </div>
+//   );
+// }

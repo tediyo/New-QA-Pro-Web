@@ -1,3 +1,4 @@
+
 import type { Metadata } from "next";
 import { Inter, Roboto_Mono } from "next/font/google";
 import "./globals.css";
@@ -22,7 +23,8 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${robotoMono.variable} antialiased bg-gray-900 text-white`}>
+      <body className={`${inter.variable} ${robotoMono.variable} antialiased`}>
+
         {children}
       </body>
     </html>

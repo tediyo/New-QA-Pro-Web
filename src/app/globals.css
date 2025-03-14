@@ -2,21 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background-light: #baf607;
-  --foreground-light: #f30f0f;
-
-  --background-dark: #0a0a0a;
-  --foreground-dark: #3203ef;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: var(--background-dark);
-    --foreground: var(--foreground-dark);
-  }
-}
-
 body {
-  @apply bg-[var(--background)] text-[var(--foreground)] font-sans;
+  @apply bg-gray-900 text-white;
 }
