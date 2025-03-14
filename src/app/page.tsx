@@ -30,6 +30,7 @@ export default function Page() {  // ✅ Make sure the function is properly expo
             <Link href="#about">About</Link>
             <Link href="#services">Services</Link>
             <Link href="#contact">Contact</Link>
+            <a href="/qa" className="hover:text-yellow-400 cursor-pointer">QA</a>
           </nav>
         </div>
       </header>
