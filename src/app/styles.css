@@ -155,7 +155,7 @@
     margin-bottom: 10px;
   }
   
-  /* Sample Card */
+  /* Sample Card
   .sample-card {
     width: 250px;
     height: 250px;
@@ -179,7 +179,35 @@
     font-weight: bold;
     color: #bbf63b;
     background: transparent;
+  } */
+
+  @keyframes circular-motion {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(50px, 50px) rotate(90deg); }
+    50% { transform: translate(0px, 100px) rotate(180deg); }
+    75% { transform: translate(-50px, 50px) rotate(270deg); }
+    100% { transform: translate(0, 0) rotate(360deg); }
   }
+  
+  .sample-card {
+    width: 250px;
+    height: 250px;
+    background-color: #10b981;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .sample-card.animate {
+    animation: circular-motion 2s linear infinite;
+  }
+  
   
   /* Button */
   .button {
