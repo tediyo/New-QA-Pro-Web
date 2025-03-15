@@ -78,10 +78,57 @@
     padding: 40px;
   }
   
+  /* .logo {
+    width: 160px;
+    margin-bottom: 20px;
+  } */
   .logo {
     width: 160px;
     margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
+    display: block; /* Ensures proper scaling */
   }
+  
+  .logo:hover {
+    transform: scale(1.2); /* Increases size by 20% on hover */
+  }
+  
+  .sample-card {
+    width: 250px;
+    height: 250px;
+    background-color: #10b981;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
+  }
+  
+  .sample-card:hover {
+    transform: scale(1.1); /* Increase size by 10% on hover */
+  }
+  
+  .button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: #10b981;
+    color: black;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth transition */
+  }
+  
+  .button:hover {
+    background: yellow !important; /* Force yellow color */
+    color: black !important; /* Ensure text remains visible */
+  }
+  
   
   .datetime-container {
     font-size: 20px;
