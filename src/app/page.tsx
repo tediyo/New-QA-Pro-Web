@@ -74,6 +74,8 @@ export default function Page() {  // ✅ Make sure the function is properly expo
       <h1>Hello, CSS!</h1>
     </div>
 
+    {/* card 2 */}
+
         {/* Button */}
         <button className="button">Test Button</button>
       </div>
