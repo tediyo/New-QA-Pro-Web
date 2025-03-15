@@ -78,10 +78,59 @@
     padding: 40px;
   }
   
+  /* .logo {
+    width: 160px;
+    margin-bottom: 20px;
+  } */
   .logo {
     width: 160px;
     margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
+    display: block; /* Ensures proper scaling */
   }
+  
+  .logo:hover {
+    transform: scale(1.2); /* Increases size by 20% on hover */
+    background: yellow !important;
+  }
+  
+  .sample-card {
+    width: 250px;
+    height: 250px;
+    background-color: #f8f405;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(249, 1, 1, 0.734);
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
+  }
+  
+  .sample-card:hover {
+    transform: scale(1.5); /* Increase size by 10% on hover */
+    background: yellow !important;
+  }
+  
+  .button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: #10b981;
+    color: black;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth transition */
+  }
+  
+  .button:hover {
+    background: yellow !important; /* Force yellow color */
+    color: black !important; /* Ensure text remains visible */
+  }
+  
   
   .datetime-container {
     font-size: 20px;
@@ -106,7 +155,7 @@
     margin-bottom: 10px;
   }
   
-  /* Sample Card */
+  /* Sample Card
   .sample-card {
     width: 250px;
     height: 250px;
@@ -130,7 +179,35 @@
     font-weight: bold;
     color: #bbf63b;
     background: transparent;
+  } */
+
+  @keyframes circular-motion {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(50px, 50px) rotate(90deg); }
+    50% { transform: translate(0px, 100px) rotate(180deg); }
+    75% { transform: translate(-50px, 50px) rotate(270deg); }
+    100% { transform: translate(0, 0) rotate(360deg); }
   }
+  
+  .sample-card {
+    width: 250px;
+    height: 250px;
+    background-color: #10b981;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .sample-card.animate {
+    animation: circular-motion 2s linear infinite;
+  }
+  
   
   /* Button */
   .button {

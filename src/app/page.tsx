@@ -13,6 +13,12 @@ import { useRouter } from "next/navigation"; // ✅ Correct import
 
 export default function Page() {  // ✅ Make sure the function is properly exported
   const [isClient, setIsClient] = useState(false);
+  const [isAnimating, setIsAnimating] = useState(false);
+
+  const handleClick = () => {
+    setIsAnimating(!isAnimating);
+  };
+
   const router = useRouter();
   useEffect(() => {
     setIsClient(true);
@@ -56,10 +62,17 @@ export default function Page() {  // ✅ Make sure the function is properly expo
         </main>
 
         {/* Sample Card */}
-        <div className="sample-card">
+        {/* <div className="sample-card">
           <span>Green Card</span>
           <h1>Hello, CSS!</h1>
-        </div>
+        </div> */}
+        <div 
+      className={`sample-card ${isAnimating ? "animate" : ""}`} 
+      onClick={handleClick}
+    >
+      <span>Green Card</span>
+      <h1>Hello, CSS!</h1>
+    </div>
 
         {/* Button */}
         <button className="button">Test Button</button>
