@@ -1,0 +1,24 @@
+/* General Page Styling */
+.developer-container {
+    padding: 32px;
+    background-color: #f8f9fa;
+    text-align: center;
+  }
+  
+  /* Title Styling */
+  .developer-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #1e3a8a; /* Deep blue */
+    margin-bottom: 16px;
+  }
+  
+  /* Paragraph Styling */
+  .developer-description {
+    font-size: 18px;
+    color: #4a4a4a;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
