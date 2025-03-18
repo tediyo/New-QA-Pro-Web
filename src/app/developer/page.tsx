@@ -1,6 +1,8 @@
 import { FC } from "react";
 import "./styles.css"; // Import the CSS file
 
+const skills = ["Next.js", "React", "Java", "JavaScript", "Remix", "React Native"];
+
 const DeveloperPage: FC = () => {
   return (
     <div className="developer-container">
@@ -10,6 +12,15 @@ const DeveloperPage: FC = () => {
         I have worked on various projects involving web development, system architecture,
         and performance optimization.
       </p>
+
+      {/* Skills Section */}
+      <div className="skills-container">
+        {skills.map((skill, index) => (
+          <div key={index} className="skill-card">
+            {skill}
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
