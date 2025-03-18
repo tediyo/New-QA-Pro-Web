@@ -1,7 +1,15 @@
 import { FC } from "react";
 import "./styles.css"; // Import the CSS file
 
-const skills = ["Next.js", "React", "Java", "JavaScript", "Remix", "React Native"];
+// Skills array with names and corresponding logos
+const skills = [
+  { name: "Next.js", logo: "/logos/next.svg" },
+  { name: "React", logo: "/logos/react.svg" },
+  { name: "Java", logo: "/logos/java.svg" },
+  { name: "JavaScript", logo: "/logos/javascript.svg" },
+  { name: "Remix", logo: "/logos/remix.svg" },
+  { name: "React Native", logo: "/logos/react-native.svg" },
+];
 
 const DeveloperPage: FC = () => {
   return (
@@ -17,7 +25,8 @@ const DeveloperPage: FC = () => {
       <div className="skills-container">
         {skills.map((skill, index) => (
           <div key={index} className="skill-card">
-            {skill}
+            <img src={skill.logo} alt={skill.name} className="skill-logo" />
+            <span className="skill-name">{skill.name}</span>
           </div>
         ))}
       </div>
