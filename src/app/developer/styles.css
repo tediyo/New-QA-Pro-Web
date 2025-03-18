@@ -22,3 +22,31 @@
     line-height: 1.6;
   }
   
+  /* Skills Container */
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+  }
+  
+  /* Skill Cards */
+  .skill-card {
+    background: #fff;
+    color: #333;
+    padding: 10px 16px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid #1e3a8a; /* Blue border */
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .skill-card:hover {
+    transform: scale(1.1);
+    background-color: #1e3a8a;
+    color: white;
+  }
+  
