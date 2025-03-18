@@ -1,0 +1,63 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header */
+  header {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  /* Content Styling */
+  .container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  /* QA Skills Section */
+  .qa-card {
+    border: 2px solid #27ae60;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .qa-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Typography */
+  h2 {
+    color: #333;
+  }
+  
+  p {
+    color: #666;
+  }
+  
