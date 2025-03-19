@@ -4,6 +4,7 @@ import Image from "next/image";
 import ParticlesBackground from "@/components/ParticlesBackground";
 import DateTime from "@/components/DateTime";
 import HomeSection from "@/components/HomeSection"; 
+import Navbar from "@/components/Navbar"; 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import './styles.css'; 
@@ -50,7 +51,8 @@ export default function Page() {  // ✅ Make sure the function is properly expo
         <main>
           <Image className="logo" src="/next.svg" alt="Next.js logo" width={1600} height={40} priority />
           {isClient && <DateTime />}
-          <HomeSection />
+          <Navbar />
+          {/* <HomeSection /> */}
 
           <ol className="instructions">
             <li>
