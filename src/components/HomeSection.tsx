@@ -1,33 +1,11 @@
 import Image from 'next/image';
 import { FC } from 'react';
+import Navbar from './Navbar'; // Import the Navbar
 
 const HomeSection: FC = () => {
   return (
     <header className="relative w-full min-h-screen bg-gray-900 text-white">
-      {/* Top Navbar */}
-      <nav className="fixed top-0 left-0 w-full bg-gray-800 bg-opacity-75 p-4 shadow-md z-10">
-        <ul className="flex justify-center space-x-8 text-lg">
-          <li>
-            <a href="#home" className="hover:text-blue-400 cursor-pointer">HOME</a>
-          </li>
-          <li>
-            <a href="#about" className="hover:text-yellow-400 cursor-pointer">ABOUT</a>
-          </li>
-          <li>
-            <a href="#projects" className="hover:text-yellow-400 cursor-pointer">PROJECTS</a>
-          </li>
-          <li>
-            <a href="#contact" className="hover:text-yellow-400 cursor-pointer">CONTACT</a>
-          </li>
-          {/* Developer and QA Role Buttons */}
-          <li>
-            <a href="/developer" className="hover:text-yellow-400 cursor-pointer">Developer</a>
-          </li>
-          <li>
-            <a href="/qa" className="hover:text-yellow-400 cursor-pointer">QQA</a>
-          </li>
-        </ul>
-      </nav>
+      <Navbar /> {/* Use the extracted Navbar here */}
 
       {/* Main Content */}
       <div id="home" className="flex flex-col items-center justify-center min-h-screen pt-16">
