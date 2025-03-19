@@ -4,8 +4,8 @@ import ParticlesBackground from "@/components/ParticlesBackground";
 import DateTime from "@/components/DateTime";
 import Navbar from "@/components/Navbar";
 import { useEffect, useState } from 'react';
-import Link from 'next/link';
-import { useRouter } from "next/navigation";
+
+//import { useRouter } from "next/navigation";
 import './styles.css'; 
 
 export default function Page() {
@@ -16,7 +16,7 @@ export default function Page() {
     setIsAnimating(!isAnimating);
   };
 
-  const router = useRouter();
+  //const router = useRouter();
   useEffect(() => {
     setIsClient(true);
   }, []);

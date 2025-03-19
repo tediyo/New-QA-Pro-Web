@@ -1,5 +1,6 @@
 import { FC } from "react";
 import "./styles.css"; // Import the CSS file
+import Image from "next/image";
 
 // Skills array with names and corresponding logos
 const skills = [
@@ -25,7 +26,7 @@ const DeveloperPage: FC = () => {
       <div className="skills-container">
         {skills.map((skill, index) => (
           <div key={index} className="skill-card">
-            <img src={skill.logo} alt={skill.name} className="skill-logo" />
+            <Image src={skill.logo} alt={skill.name} className="skill-logo" />
             <span className="skill-name">{skill.name}</span>
           </div>
         ))}
