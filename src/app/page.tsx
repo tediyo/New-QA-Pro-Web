@@ -1,18 +1,14 @@
 "use client";
-
 import Image from "next/image";
 import ParticlesBackground from "@/components/ParticlesBackground";
 import DateTime from "@/components/DateTime";
-import HomeSection from "@/components/HomeSection"; 
-import Navbar from "@/components/Navbar"; 
+import Navbar from "@/components/Navbar";
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import { useRouter } from "next/navigation";
 import './styles.css'; 
-import { useRouter } from "next/navigation"; // ✅ Correct import
 
-// Import the new CSS file
-
-export default function Page() {  // ✅ Make sure the function is properly exported
+export default function Page() {
   const [isClient, setIsClient] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
 
@@ -29,21 +25,19 @@ export default function Page() {  // ✅ Make sure the function is properly expo
     <div className="main-container">
       {isClient && <ParticlesBackground />}
 
-      {/* Header */}
-      <header>
-        <div className="header-container">
-          <div className="header-logo">
-            <Link href="/">My App</Link>
-          </div>
-          <nav className="nav-links">
-          <button onClick={() => router.push("/qa")}>Home✅</button>
+      {/* ✅ Updated Header Section */}
+      <header className="relative w-full flex items-center justify-between p-4 bg-gray-900 shadow-lg">
+        {/* Profile Image on the Top Left */}
+        <Image
+          src="https://randomuser.me/api/portraits/men/32.jpg"
+          alt="Profile Photo"
+          width={60} // Adjusted size for top-left placement
+          height={60}
+          className="rounded-full shadow-lg ml-4" // Margin-left for spacing
+        />
 
-            <Link href="#about">About</Link>
-            <Link href="#services">Services</Link>
-            <Link href="#contact">Contact</Link>
-            <a href="/qa" className="hover:text-yellow-400 cursor-pointer">QA</a>
-          </nav>
-        </div>
+        {/* Navbar (Centered) */}
+       <Navbar/>
       </header>
 
       {/* Main Content */}
@@ -51,32 +45,18 @@ export default function Page() {  // ✅ Make sure the function is properly expo
         <main>
           <Image className="logo" src="/next.svg" alt="Next.js logo" width={1600} height={40} priority />
           {isClient && <DateTime />}
-          <Navbar />
-          {/* <HomeSection /> */}
 
           <ol className="instructions">
-            <li>
-              Get started by editing{" "}
-              <code>src/app/page.tsx</code>.
-            </li>
+            <li>Get started by editing <code>src/app/page.tsx</code>.</li>
             <li>Save and see your changes instantly. Next.js!!!</li>
           </ol>
         </main>
 
         {/* Sample Card */}
-        {/* <div className="sample-card">
+        <div className={`sample-card ${isAnimating ? "animate" : ""}`} onClick={handleClick}>
           <span>Green Card</span>
           <h1>Hello, CSS!</h1>
-        </div> */}
-        <div 
-      className={`sample-card ${isAnimating ? "animate" : ""}`} 
-      onClick={handleClick}
-    >
-      <span>Green Card</span>
-      <h1>Hello, CSS!</h1>
-    </div>
-
-    {/* card 2 */}
+        </div>
 
         {/* Button */}
         <button className="button">Test Button</button>
