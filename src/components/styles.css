@@ -4,9 +4,9 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba(31, 31, 31, 0.9); /* Semi-transparent dark */
+    background-color: transparent; /* Semi-transparent dark */
     padding: 12px 0;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 6px rgba(246, 3, 3, 0.6);
     z-index: 1000;
     display: flex;
     justify-content: center;
