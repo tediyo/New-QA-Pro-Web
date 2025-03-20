@@ -1,72 +1,129 @@
 /* General Page Styling */
 .developer-container {
-    padding: 32px;
-    background-color: #f8f9fa;
-    text-align: center;
-  }
-  
-  /* Title Styling */
-  .developer-title {
-    font-size: 32px;
-    font-weight: bold;
-    color: #1e3a8a;
-    margin-bottom: 16px;
-  }
-  
-  /* Paragraph Styling */
-  .developer-description {
-    font-size: 18px;
-    color: #4a4a4a;
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.6;
-  }
-  
-  /* Skills Container */
-  .skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px;
-    margin-top: 20px;
-  }
-  
-  /* Skill Cards */
-  .skill-card {
-    background: #fff;
-    color: #333;
-    padding: 12px;
-    border-radius: 8px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    font-size: 16px;
-    font-weight: bold;
-    border: 2px solid #1e3a8a;
-    transition: transform 0.2s ease-in-out;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 120px;
-    height: 120px;
-    text-align: center;
-  }
-  
-  .skill-card:hover {
-    transform: scale(1.1);
-    background-color: #1e3a8a;
-    color: white;
-  }
-  
-  /* Skill Logo */
-  .skill-logo {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 8px;
-  }
-  
-  /* Skill Name */
-  .skill-name {
-    font-size: 14px;
-    font-weight: bold;
-  }
-  
+  padding: 32px;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+/* Title Styling */
+.developer-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #1e3a8a;
+  margin-bottom: 16px;
+}
+
+/* Paragraph Styling */
+.developer-description {
+  font-size: 18px;
+  color: #4a4a4a;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Skills Container */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+/* Skill Cards */
+.skill-card {
+  background: #fff;
+  color: #333;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  font-weight: bold;
+  border: 2px solid #1e3a8a;
+  transition: transform 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  text-align: center;
+}
+
+.skill-card:hover {
+  transform: scale(1.1);
+  background-color: #1e3a8a;
+  color: white;
+}
+
+/* Skill Logo */
+.skill-logo {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 8px;
+}
+
+/* Skill Name */
+.skill-name {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Crypto News Section Styling */
+.crypto-news-container {
+  margin-top: 40px;
+  text-align: left;
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+/* Crypto News Title */
+.crypto-news-container h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1e3a8a;
+  margin-bottom: 20px;
+}
+
+/* Crypto News Articles List */
+.crypto-news-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.crypto-news-container li {
+  background: #fff;
+  color: #333;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 16px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.crypto-news-container li:hover {
+  transform: scale(1.05);
+  background-color: #1e3a8a;
+  color: white;
+}
+
+.crypto-news-container a {
+  font-size: 16px;
+  font-weight: bold;
+  color: #1e3a8a;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
+  transition: color 0.3s ease-in-out;
+}
+
+.crypto-news-container a:hover {
+  color: #fff;
+}
+
+.crypto-news-container p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #4a4a4a;
+}
