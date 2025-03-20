@@ -26,7 +26,8 @@ const DeveloperPage: FC = () => {
       <div className="skills-container">
         {skills.map((skill, index) => (
           <div key={index} className="skill-card">
-            <Image src={skill.logo} alt={skill.name} className="skill-logo" />
+            <Image src={skill.logo} alt={skill.name} className="skill-logo"  width={50}  // You can adjust this to fit your design
+            height={50} />
             <span className="skill-name">{skill.name}</span>
           </div>
         ))}
