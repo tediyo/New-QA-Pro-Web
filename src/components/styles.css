@@ -14,7 +14,7 @@
   
   /* ✅ Navbar List */
   .navbar ul {
-    display: inline;
+    display: block;
     gap: 20px; /* Spacing between items */
     list-style: none;
     padding: 0;
