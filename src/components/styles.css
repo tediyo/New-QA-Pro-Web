@@ -19,11 +19,12 @@
   width: 100%;
 }
 
+/* ✅ Hide hamburger on larger screens */
 .hamburger {
   background: none;
   border: none;
   cursor: pointer;
-  display: flex;
+  display: none; /* Hide by default */
   flex-direction: column;
   gap: 5px;
   padding: 0;
@@ -66,6 +67,12 @@
 
 /* ✅ Responsive for Mobile */
 @media (max-width: 768px) {
+  /* Show hamburger button only on mobile */
+  .hamburger {
+    display: flex;
+  }
+
+  /* Stack menu vertically on mobile */
   .navbar ul {
     display: flex;
     flex-direction: column;
