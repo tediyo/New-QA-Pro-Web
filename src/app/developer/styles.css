@@ -131,6 +131,7 @@
 /* Crypto News Card Container */
 .crypto-news-list {
   display: flex;
+  background: transparent;
   flex-wrap: wrap;
   justify-content: center;
   gap: 16px;
