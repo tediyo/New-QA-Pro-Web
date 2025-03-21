@@ -1,50 +1,95 @@
 /* ✅ Navbar Styling */
 .navbar {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: transparent; /* Semi-transparent dark */
-    padding: 12px 0;
-    box-shadow: 0px 4px 6px rgba(169, 196, 87, 0.6);
-    z-index: 1000;
-    display: flex;
-    justify-content: center;
-  }
-  
-  /* ✅ Navbar List */
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: transparent; /* Semi-transparent dark */
+  padding: 12px 0;
+  box-shadow: 0px 4px 6px rgba(169, 196, 87, 0.6);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.hamburger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 0;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+/* ✅ Navbar List */
+.navbar ul {
+  display: flex;
+  gap: 20px; /* Spacing between items */
+  list-style: none;
+  padding: 10;
+  margin: 10;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+  padding: 10px 15px;
+}
+
+/* ✅ Hover Effect */
+.navbar ul li a:hover {
+  color: #facc15; /* Yellow */
+}
+
+/* ✅ Mobile Menu - Hidden by default */
+.navbar ul {
+  display: none;
+}
+
+/* ✅ Responsive for Mobile */
+@media (max-width: 768px) {
   .navbar ul {
     display: flex;
-    gap: 20px; /* Spacing between items */
-    list-style: none;
-    padding: 10;
-    margin: 10;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background */
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    justify-content: center;
+    transform: translateY(-100%); /* Initially hide the menu */
+    transition: transform 0.3s ease;
   }
-  
-  /* ✅ Navbar Links */
+
+  /* Show the menu when the button is clicked */
+  .navbar ul.open {
+    transform: translateY(0); /* Slide down the menu */
+  }
+
   .navbar ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    font-weight: 500;
-    transition: color 0.3s ease-in-out;
-    padding: 10px 15px;
+    font-size: 22px;
+    padding: 15px;
+    text-align: center;
   }
-  
-  /* ✅ Hover Effect */
-  .navbar ul li a:hover {
-    color: #facc15; /* Yellow */
-  }
-  
-  /* ✅ Responsive for Mobile */
-  @media (max-width: 768px) {
-    .navbar ul {
-      gap: 10px;
-    }
-  
-    .navbar ul li a {
-      font-size: 16px;
-      padding: 8px 12px;
-    }
-  }
-  
+}
