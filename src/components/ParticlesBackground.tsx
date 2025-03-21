@@ -69,7 +69,7 @@ const ParticlesBackground: React.FC = () => {
             links: {
               enable: true,
               distance: 150,
-              color: "#FFFF00",
+              color: "#FFFFFF",
               opacity: 0.4,
               width: 1,
             },
