@@ -126,6 +126,7 @@ useEffect(() => {
   <p style={{ color: "red" }}>Error: {error}</p>
 ) : cryptoNews.length > 0 ? (
   <ul>
+    <div className="crypto-news-list">
     {cryptoNews.map((article, index) => (
       <li key={index}>
         <a href={article.url} target="_blank" rel="noopener noreferrer">
@@ -138,6 +139,7 @@ useEffect(() => {
         </p>
       </li>
     ))}
+    </div>
   </ul>
 ) : (
   <p>No news available.</p>
