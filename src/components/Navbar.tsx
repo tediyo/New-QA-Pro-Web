@@ -12,11 +12,14 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
+        {/* Hamburger button visible only on mobile */}
         <button className="hamburger" onClick={toggleMenu}>
           <span className="bar"></span>
           <span className="bar"></span>
           <span className="bar"></span>
         </button>
+
+        {/* Navbar menu items */}
         <ul className={isMenuOpen ? "menu open" : "menu"}>
           <li><a href="#home">HOME</a></li>
           <li><a href="#about">ABOUT</a></li>
