@@ -55,7 +55,7 @@ export default function Page() {
         {/* Sample Card */}
         <div className={`sample-card ${isAnimating ? "animate" : ""}`} onClick={handleClick}>
           <span>Green Card</span>
-          <h1>Hello, CSS!</h1>
+          {/* <h1>Hello, CSS!</h1> */}
         </div>
 
         {/* Button */}
