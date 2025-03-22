@@ -213,8 +213,8 @@ Reset and Global Styles
   .button {
     margin-top: 20px;
     padding: 12px 24px;
-    background: #e87902;
-    color: black;
+    background: #02f206;
+    color: rgb(0, 0, 0);
     font-weight: bold;
     border-radius: 6px;
     cursor: pointer;
