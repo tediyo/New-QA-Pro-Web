@@ -16,7 +16,7 @@ const QAPage: FC = () => {
       <ParticlesBackground />
       <div className="content-wrapper">
         <h2 className="page-title">
-          QA - John Doeeeeeeeeeee (In Development)
+          QA - John Doe (In Development)
         </h2>
 
         <p className="page-description">

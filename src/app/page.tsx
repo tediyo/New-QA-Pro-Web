@@ -47,8 +47,8 @@ export default function Page() {
           {isClient && <DateTime />}
 
           <ol className="instructions">
-            <li>Get started by editing <code>src/app/page.tsx</code>.</li>
-            <li>Save and see your changes instantly. Next.js!!!</li>
+            {/* <li>Get started by editing <code>src/app/page.tsx</code>.</li>
+            <li>Save and see your changes instantly. Next.js!!!</li> */}
           </ol>
         </main>
 
