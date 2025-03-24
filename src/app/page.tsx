@@ -58,13 +58,13 @@ export default function Page() {
           {/* <h1>Hello, CSS!</h1> */}
         </div>
         {/* Sample Card 2 */}
-        <div className={`sample-card ${isAnimating ? "animate" : ""}`} onClick={handleClick}>
+        <div className={`sample-card-one ${isAnimating ? "animate" : ""}`} onClick={handleClick}>
           <span>Green Card</span>
           {/* <h1>Hello, CSS!</h1> */}
         </div>
-        
+
         {/* Sample Card 3 */}
-        <div className={`sample-card ${isAnimating ? "animate" : ""}`} onClick={handleClick}>
+        <div className={`sample-card-two ${isAnimating ? "animate" : ""}`} onClick={handleClick}>
           <span>Green Card</span>
           {/* <h1>Hello, CSS!</h1> */}
         </div>
