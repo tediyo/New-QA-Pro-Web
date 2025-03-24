@@ -104,7 +104,7 @@ Reset and Global Styles
   .sample-card, .sample-card-one, .sample-card-two {
     width: 250px;
     height: 250px;
-    background-color: transparent; /* Keeping it as per your original style */
+    background-color: green; /* Keeping it as per your original style */
     display: flex;
     flex-direction: column;
     align-items: center;
