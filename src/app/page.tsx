@@ -62,7 +62,12 @@ export default function Page() {
           <span>Green Card</span>
           {/* <h1>Hello, CSS!</h1> */}
         </div>
+        
         {/* Sample Card 3 */}
+        <div className={`sample-card ${isAnimating ? "animate" : ""}`} onClick={handleClick}>
+          <span>Green Card</span>
+          {/* <h1>Hello, CSS!</h1> */}
+        </div>
 
         {/* Button */}
         <button className="button">Test Button</button>
