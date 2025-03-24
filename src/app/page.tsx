@@ -52,24 +52,23 @@ export default function Page() {
           </ol>
         </main>
   {/* Card Div */}
-   <div>
-        {/* Sample Card 1 */}
-        <div className={`sample-card ${isAnimating ? "animate" : ""}`} onClick={handleClick}>
-          <span>Green Card</span>
-          {/* <h1>Hello, CSS!</h1> */}
-        </div>
-        {/* Sample Card 2 */}
-        <div className={`sample-card-one ${isAnimating ? "animate" : ""}`} onClick={handleClick}>
-          <span>Green Card</span>
-          {/* <h1>Hello, CSS!</h1> */}
-        </div>
+  <div className="card-container">
+  {/* Sample Card 1 */}
+  <div className={`sample-card ${isAnimating ? "animate" : ""}`} onClick={handleClick}>
+    <span>Green Card</span>
+  </div>
 
-        {/* Sample Card 3 */}
-        <div className={`sample-card-two ${isAnimating ? "animate" : ""}`} onClick={handleClick}>
-          <span>Green Card</span>
-          {/* <h1>Hello, CSS!</h1> */}
-        </div>
-      </div>
+  {/* Sample Card 2 */}
+  <div className={`sample-card-one ${isAnimating ? "animate" : ""}`} onClick={handleClick}>
+    <span>Green Card</span>
+  </div>
+
+  {/* Sample Card 3 */}
+  <div className={`sample-card-two ${isAnimating ? "animate" : ""}`} onClick={handleClick}>
+    <span>Green Card</span>
+  </div>
+</div>
+
         {/* Button */}
         <button className="button">Test Button</button>
       </div>
