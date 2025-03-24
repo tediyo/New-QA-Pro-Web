@@ -10,14 +10,14 @@ import './styles.css';
 
 export default function Page() {
   const [isClient, setIsClient] = useState(false);
-  const [animatedCard, setAnimatedCard] = useState(null);
+  const [animatedCard, setAnimatedCard] = useState<number | null>(null);
   // const handleClick = () => {
   //   setIsAnimating(!isAnimating);
   // };
  
-  const handleClick = (cardIndex) => {
+  const handleClick = (cardIndex:number) => {
     setAnimatedCard(cardIndex);
-    setTimeout(() => setAnimatedCard(null), 500); // Reset animation after 500ms
+    setTimeout(() => setAnimatedCard(null), 5000000); // Reset animation after 500ms
   };
 
   //const router = useRouter();
