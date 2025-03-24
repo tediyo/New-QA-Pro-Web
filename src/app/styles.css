@@ -147,6 +147,10 @@ Reset and Global Styles
     background: yellow !important;
   }
   
+  .sample-card-one:hover {
+    transform: scale(1.5); /* Increase size by 10% on hover */
+    background: yellow !important;
+  }
   .button {
     margin-top: 20px;
     padding: 12px 24px;
