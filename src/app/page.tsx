@@ -51,7 +51,8 @@ export default function Page() {
             <li>Save and see your changes instantly. Next.js!!!</li> */}
           </ol>
         </main>
-
+  {/* Card Div */}
+   <div>
         {/* Sample Card 1 */}
         <div className={`sample-card ${isAnimating ? "animate" : ""}`} onClick={handleClick}>
           <span>Green Card</span>
@@ -68,7 +69,7 @@ export default function Page() {
           <span>Green Card</span>
           {/* <h1>Hello, CSS!</h1> */}
         </div>
-
+      </div>
         {/* Button */}
         <button className="button">Test Button</button>
       </div>
