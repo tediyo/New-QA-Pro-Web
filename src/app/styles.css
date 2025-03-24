@@ -127,7 +127,8 @@ Reset and Global Styles
   .sample-card-two {
     width: 250px;
     height: 250px;
-    background-color: #f8f405;
+    left:0;
+    background-color: #05f85a;
     background: transparent;
     display: flex;
     flex-direction: column;
