@@ -230,7 +230,13 @@ Reset and Global Styles
   .sample-card.animate {
     animation: circular-motion 2s linear infinite;
   }
-  
+
+  .sample-card-one.animate {
+    animation: circular-motion 2s linear infinite;
+  }
+  .sample-card-two.animate {
+    animation: circular-motion 2s linear infinite;
+  }
   
   /* Button */
   .button {
