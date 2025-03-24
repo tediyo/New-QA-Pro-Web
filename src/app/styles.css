@@ -107,13 +107,57 @@ Reset and Global Styles
     border-radius: 8px;
     margin-top: 20px;
     transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
+    margin-left: 0;
+    align-self: flex-start;
   }
   
+  .sample-card-one {
+    width: 250px;
+    height: 250px;
+    background-color: #f8f405;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(249, 1, 1, 0.734);
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
+    margin-left: -450;
+    align-self: flex-start; /* If inside a flex container */
+  }
+
+  .sample-card-two {
+    width: 250px;
+    height: 250px;
+    left:0;
+    background-color: #05f85a;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(249, 1, 1, 0.734);
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
+  }
+
   .sample-card:hover {
     transform: scale(1.5); /* Increase size by 10% on hover */
     background: yellow !important;
   }
   
+  .sample-card-one:hover {
+    transform: scale(1.5); /* Increase size by 10% on hover */
+    background: yellow !important;
+  }
+  .sample-card-two:hover {
+    transform: scale(1.5); /* Increase size by 10% on hover */
+    background: yellow !important;
+  }
+
   .button {
     margin-top: 20px;
     padding: 12px 24px;
@@ -213,7 +257,7 @@ Reset and Global Styles
   .button {
     margin-top: 20px;
     padding: 12px 24px;
-    background: #02f206;
+    background: #f20202;
     color: rgb(0, 0, 0);
     font-weight: bold;
     border-radius: 6px;
