@@ -124,6 +124,21 @@ Reset and Global Styles
     transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
   }
 
+  .sample-card-two {
+    width: 250px;
+    height: 250px;
+    background-color: #f8f405;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(249, 1, 1, 0.734);
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
+  }
+
   .sample-card:hover {
     transform: scale(1.5); /* Increase size by 10% on hover */
     background: yellow !important;
