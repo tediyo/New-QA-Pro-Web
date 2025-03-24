@@ -10,10 +10,14 @@ import './styles.css';
 
 export default function Page() {
   const [isClient, setIsClient] = useState(false);
-  const [isAnimating, setIsAnimating] = useState(false);
-
-  const handleClick = () => {
-    setIsAnimating(!isAnimating);
+  const [animatedCard, setAnimatedCard] = useState<number | null>(null);
+  // const handleClick = () => {
+  //   setIsAnimating(!isAnimating);
+  // };
+ 
+  const handleClick = (cardIndex:number) => {
+    setAnimatedCard(cardIndex);
+    setTimeout(() => setAnimatedCard(null), 5000000); // Reset animation after 500ms
   };
 
   //const router = useRouter();
@@ -51,23 +55,26 @@ export default function Page() {
             <li>Save and see your changes instantly. Next.js!!!</li> */}
           </ol>
         </main>
+  {/* Card Div */}
+  <div className="card-container">
+  {/* Sample Card 1 */}
+  <div  className={`sample-card ${animatedCard === 1 ? "animate" : ""}`}
+        onClick={() => handleClick(1)}>
+    <span>Green Card</span>
+  </div>
 
-        {/* Sample Card 1 */}
-        <div className={`sample-card ${isAnimating ? "animate" : ""}`} onClick={handleClick}>
-          <span>Green Card</span>
-          {/* <h1>Hello, CSS!</h1> */}
-        </div>
-        {/* Sample Card 2 */}
-        <div className={`sample-card-one ${isAnimating ? "animate" : ""}`} onClick={handleClick}>
-          <span>Green Card</span>
-          {/* <h1>Hello, CSS!</h1> */}
-        </div>
+  {/* Sample Card 2 */}
+  <div  className={`sample-card ${animatedCard === 2 ? "animate" : ""}`}
+        onClick={() => handleClick(2)}>
+    <span>Green Card</span>
+  </div>
 
-        {/* Sample Card 3 */}
-        <div className={`sample-card-two ${isAnimating ? "animate" : ""}`} onClick={handleClick}>
-          <span>Green Card</span>
-          {/* <h1>Hello, CSS!</h1> */}
-        </div>
+  {/* Sample Card 3 */}
+  <div  className={`sample-card ${animatedCard === 3 ? "animate" : ""}`}
+        onClick={() => handleClick(3)}>
+    <span>Green Card</span>
+  </div>
+</div>
 
         {/* Button */}
         <button className="button">Test Button</button>

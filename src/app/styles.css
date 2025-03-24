@@ -94,55 +94,34 @@ Reset and Global Styles
     background: yellow !important;
   }
   
-  .sample-card {
+  .card-container {
+    display: flex; /* Arrange items in a row */
+    gap: 20px; /* Space between cards */
+    justify-content: flex-start; /* Align cards to the left */
+    align-items: flex-start; /* Align to the top */
+  }
+  
+  .sample-card, .sample-card-one, .sample-card-two {
     width: 250px;
     height: 250px;
-    background-color: #f8f405;
-    background: transparent;
+    background-color: transparent; /* Keeping it as per your original style */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     box-shadow: 0 4px 8px rgba(249, 1, 1, 0.734);
     border-radius: 8px;
-    margin-top: 20px;
     transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
-    margin-left: 0;
-    align-self: flex-start;
   }
   
   .sample-card-one {
-    width: 250px;
-    height: 250px;
-    background-color: #f8f405;
-    background: transparent;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 8px rgba(249, 1, 1, 0.734);
-    border-radius: 8px;
-    margin-top: 20px;
-    transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
-    margin-left: -450;
-    align-self: flex-start; /* If inside a flex container */
+    background-color: transparent;
   }
-
+  
   .sample-card-two {
-    width: 250px;
-    height: 250px;
-    left:0;
-    background-color: #05f85a;
-    background: transparent;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 8px rgba(249, 1, 1, 0.734);
-    border-radius: 8px;
-    margin-top: 20px;
-    transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
+    background-color: #05f85a; /* Unique color */
   }
+  
 
   .sample-card:hover {
     transform: scale(1.5); /* Increase size by 10% on hover */
@@ -233,7 +212,7 @@ Reset and Global Styles
     100% { transform: translate(0, 0) rotate(360deg); }
   }
   
-  .sample-card {
+  /* .sample-card {
     width: 250px;
     height: 250px;
     background-color: #10b981;
@@ -246,12 +225,18 @@ Reset and Global Styles
     margin-top: 20px;
     transition: transform 0.3s ease-in-out;
     cursor: pointer;
-  }
+  } */
   
   .sample-card.animate {
     animation: circular-motion 2s linear infinite;
   }
-  
+
+  .sample-card-one.animate {
+    animation: circular-motion 2s linear infinite;
+  }
+  .sample-card-two.animate {
+    animation: circular-motion 2s linear infinite;
+  }
   
   /* Button */
   .button {
