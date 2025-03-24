@@ -122,6 +122,8 @@ Reset and Global Styles
     border-radius: 8px;
     margin-top: 20px;
     transition: transform 0.3s ease-in-out; /* Smooth zoom effect */
+    margin-left: 0;
+    align-self: flex-start; /* If inside a flex container */
   }
 
   .sample-card-two {
