@@ -17,7 +17,7 @@ export default function Page() {
  
   const handleClick = (cardIndex:number) => {
     setAnimatedCard(cardIndex);
-    setTimeout(() => setAnimatedCard(null), 5000000); // Reset animation after 500ms
+    setTimeout(() => setAnimatedCard(null), 10000); // Reset animation after 500ms
   };
 
   //const router = useRouter();
