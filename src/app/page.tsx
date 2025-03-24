@@ -52,7 +52,11 @@ export default function Page() {
           </ol>
         </main>
 
-        {/* Sample Card */}
+        {/* Sample Card 1 */}
+        <div className={`sample-card ${isAnimating ? "animate" : ""}`} onClick={handleClick}>
+          <span>Green Card</span>
+          {/* <h1>Hello, CSS!</h1> */}
+        </div>
         <div className={`sample-card ${isAnimating ? "animate" : ""}`} onClick={handleClick}>
           <span>Green Card</span>
           {/* <h1>Hello, CSS!</h1> */}
